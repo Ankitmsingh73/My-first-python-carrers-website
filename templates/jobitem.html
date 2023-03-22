@@ -1,6 +1,7 @@
  <div class="container mt-1">
       <div class="card shadow">
-      <h1 class="fw-bold fs-4 text-center">JOB OPENING</h1>
+      <h1 class="fw-bold fs-4 text-center mt-3">JOB OPENING</h1>
+        <hr>
         <div>
           {% for job in jobs %}
             <div class="m-1 mx-4 border-bottom">
@@ -9,8 +10,8 @@
               <h4>Job Title : {{job["title"]}}</h4>
               <p>Job Location : {{job["location"]}}</p>
               {% if "salary" in job %}
-              <p>Job Salary : {{job["salary"]}}</p>
-               {% endif %}  
+                 <p>Job Salary : {{job["salary"]}}</p>
+              {% endif %}  
                 </div>
                 <div class="col-3">
               <button type="button" class="btn btn-outline-primary mt-4">Apply</button>
